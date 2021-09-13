@@ -28,7 +28,7 @@ class CareerPage(BasePage):
         # expanding all career option
         for i in range(len(all_career_option)):
             # Question no : 2
-            # s = "//div//div[3]//div//div[2]//div[1]//div[{0}]".format(i + 1)
+            # s = "//div[@class='flex-1 my-8 mr-10']//div[{0}]//div".format(i + 1)
             # loc = (By.XPATH, s)
             # print(s)
             # print(loc)
