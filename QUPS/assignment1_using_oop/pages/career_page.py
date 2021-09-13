@@ -28,12 +28,12 @@ class CareerPage(BasePage):
         # expanding all career option
         for i in range(len(all_career_option)):
             # Question no : 2
-            s = "//div//div[3]//div//div[2]//div[1]//div[{0}]".format(i + 1)
-            loc = (By.XPATH, s)
+            # s = "//div//div[3]//div//div[2]//div[1]//div[{0}]".format(i + 1)
+            # loc = (By.XPATH, s)
             # print(s)
             # print(loc)
-            self.do_click(loc)  # option 1
-            # all_career_option[i].click() # option 2
+            # self.do_click(loc)  # option 1
+            all_career_option[i].click() # option 2
 
         # Question no : 3
         all_mails = self.driver.find_elements(*self.all_mails_locator)  # option 1
